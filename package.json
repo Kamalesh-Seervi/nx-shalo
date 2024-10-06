@@ -4,7 +4,7 @@
   "description": "Tool to optimize git operations in NX Monorepo, and reduce the checkout & clone size",
   "main": "index.js",
   "bin": "dist/index.js",
-  "engines" : { 
+  "engines": {
     "npm": ">=8.0.0",
     "node": ">=20.0.0"
   },
@@ -19,6 +19,7 @@
   "author": "Meiyappan Kannappa",
   "license": "ISC",
   "dependencies": {
+    "@nx/devkit": "^19.8.4",
     "commander": "^12.1.0",
     "figlet": "^1.7.0",
     "fs": "^0.0.1-security",
@@ -26,6 +27,15 @@
     "typescript": "^5.6.2"
   },
   "devDependencies": {
-    "@types/node": "^22.7.4"
+    "@nx/playwright": "^19.8.4",
+    "@playwright/test": "^1.36.0",
+    "@types/node": "^22.7.4",
+    "nx": "19.8.4"
+  },
+  "nx": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MeiyappanKannappa/shalo.git",
+    "directory": "src"
   }
 }
