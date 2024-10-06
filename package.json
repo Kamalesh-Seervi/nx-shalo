@@ -10,7 +10,8 @@
   },
   "scripts": {
     "build": "npx tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "nx test",
+    "e2e": "nx e2e e2e"
   },
   "keywords": [
     "nx",
@@ -27,10 +28,17 @@
     "typescript": "^5.6.2"
   },
   "devDependencies": {
+    "@eslint/js": "^9.8.0",
+    "@nx/eslint": "^19.8.4",
+    "@nx/eslint-plugin": "19.8.4",
     "@nx/playwright": "^19.8.4",
-    "@playwright/test": "^1.36.0",
+    "@playwright/test": "^1.47.2",
     "@types/node": "^22.7.4",
-    "nx": "19.8.4"
+    "eslint": "^9.12.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-playwright": "^1.6.2",
+    "nx": "19.8.4",
+    "typescript-eslint": "^8.0.0"
   },
   "nx": {},
   "repository": {
