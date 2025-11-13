@@ -6,14 +6,14 @@ policy:
       if:
         changed_files_count:
           total: "< 20"
-    
+
     - name: Few commits auto-approve
       requires:
         count: 0
       if:
         commit_count:
           total: "<= 10"
-    
+
     - name: Check commit messages
       requires:
         count: 1
