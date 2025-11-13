@@ -17,7 +17,7 @@ approval_rules:
       count: 0
     if:
       commit_count:
-        total: "<= 10"
+        total: "< 11"
 
   - name: check commit messages
     requires:
